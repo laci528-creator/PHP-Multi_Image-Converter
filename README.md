@@ -41,16 +41,16 @@ How It Works
   After download, the batch folder is deleted automatically.
 
 Project Structure
-.
-├── index.php
-├── download_zip.php
-├── includes/
-│   ├── config.inc.php
-│   ├── common.inc.php
-│   ├── image_functions.inc.php
-│   ├── zip_functions.inc.php
-│   └── message_functions.inc.php
-└── uploads_bildconverter/
+
+ index.php
+ download_zip.php
+ includes/
+        config.inc.php
+        common.inc.php
+        image_functions.inc.php
+        zip_functions.inc.php
+        message_functions.inc.php
+ uploads_bildconverter/
 
 Validation
 
