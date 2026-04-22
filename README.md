@@ -40,18 +40,6 @@ How It Works
   A ZIP archive is generated from the converted files.
   After download, the batch folder is deleted automatically.
 
-Project Structure
-
- index.php
- download_zip.php
- includes/
-        config.inc.php
-        common.inc.php
-        image_functions.inc.php
-        zip_functions.inc.php
-        message_functions.inc.php
- uploads_bildconverter/
-
 Validation
 
   at least 1 file is required
@@ -120,18 +108,6 @@ Funktionsweise
   Die Bilder werden skaliert und als Vorschau angezeigt.
   Aus den konvertierten Dateien wird ein ZIP-Archiv erstellt.
   Nach dem Download wird der Batch-Ordner automatisch gelöscht.
-  
-Projektstruktur
-.
-├── index.php
-├── download_zip.php
-├── includes/
-│   ├── config.inc.php
-│   ├── common.inc.php
-│   ├── image_functions.inc.php
-│   ├── zip_functions.inc.php
-│   └── message_functions.inc.php
-└── uploads_bildconverter/
 
 Validierung
 
