@@ -79,6 +79,45 @@ td input {
     border-radius: 2px;
 }
 
+@media (max-width: 600px) {
+    .main-nav {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+    }
+    .main-nav a {
+        display: block;
+        text-align: center;
+        padding: 0.7rem 0;
+        border-bottom: 1px solid #3ea6ff;
+    }
+
+    .main-nav a:last-child {
+        border-bottom: none;
+    }
+
+    .main-nav a.active {
+        font-weight: 700;
+        border-bottom: 4px solid #3ea6ff;
+    }
+
+    .main-nav a.active::after {
+        display: none;
+    }
+    h1 {
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+
+    .tool-form {
+        padding: 1rem;
+    }
+
+    .drop-zone {
+        padding: 1.5rem 1rem;
+    }
+
+}
 
 .tool-grid {
     display: grid;
@@ -132,7 +171,7 @@ td input {
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: rgba(27, 40, 53, 0.96);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
     max-width: 850px;
     display: flex;
     flex-direction: column;
