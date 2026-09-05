@@ -108,6 +108,7 @@ if (!empty($convertedFiles)) {
 	</head>
 	<body>
         <?php require __DIR__ . "/includes/header.inc.php"; ?>
+        <main>
 		<h1>Bildformat konvertieren</h1>
 		
 		<form method="post" enctype="multipart/form-data" class="tool-form">
@@ -157,5 +158,7 @@ if (!empty($convertedFiles)) {
 		<?php echo $msg2; ?>
         <?php endif; ?>
         <script src="js/dropzone.js"></script>
+        </main>
+        <?php require __DIR__ . "/includes/footer.inc.php"; ?>
     </body>
 </html>

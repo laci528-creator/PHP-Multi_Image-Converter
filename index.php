@@ -68,5 +68,7 @@ require_once __DIR__ . "/includes/common.inc.php";
     </section>
 </main>
 
+<?php require __DIR__ . "/includes/footer.inc.php"; ?>
+
 </body>
 </html>
