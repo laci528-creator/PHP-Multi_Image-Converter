@@ -236,6 +236,13 @@ td input {
     font-size: 0.9rem;
 }
 
+.demo-note {
+    max-width: 800px;
+    margin: 0 auto 1rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
 .footer-text {
     width: 100%;
 
