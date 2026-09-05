@@ -1,13 +1,30 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html,
 body {
     min-height: 100%;
 }
 body {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: #1f2d3a;
     background-image: url("../img/dark-matter.png");
+}
+
+.main-nav,
+main {
+  width: min(900px, 90%);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 main {
@@ -62,71 +79,49 @@ td input {
     text-decoration: none;
     border-radius: 6px;
 }
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background: rgba(31, 45, 58, 0.95);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
 
 .main-nav {
+    padding: 0.5rem 0;
+
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #ccc;
+    align-items: center;
+
+    border-bottom: none;
 }
 
-.main-nav a {
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: white;
     text-decoration: none;
-    font-weight: bold;
-    position: relative;
+    font-weight: 700;
 }
 
-.main-nav a.active::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -6px;
-    height: 2px;
-    background-color: currentColor;
-    border-radius: 2px;
+.nav-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
 }
 
-@media (max-width: 600px) {
-    .main-nav {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0.5rem;
-    }
-    .main-nav a {
-        display: block;
-        text-align: center;
-        padding: 0.7rem 0;
-        border-bottom: 1px solid #3ea6ff;
-    }
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
 
-    .main-nav a:last-child {
-        border-bottom: none;
-    }
-
-    .main-nav a.active {
-        font-weight: 700;
-        border-bottom: 4px solid #3ea6ff;
-    }
-
-    .main-nav a.active::after {
-        display: none;
-    }
-    h1 {
-        font-size: 1.5rem;
-        line-height: 1.2;
-    }
-
-    .tool-form {
-        padding: 1rem;
-    }
-
-    .drop-zone {
-        padding: 1.5rem 1rem;
-    }
-
+.nav-links a.active {
+    border-bottom: 2px solid #3ea6ff;
 }
 
 .tool-grid {
@@ -268,6 +263,51 @@ td input {
 }
 
 @media (max-width: 600px) {
+    .main-nav {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+
+    .nav-brand {
+        justify-content: center;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    .nav-links a {
+        display: block;
+        text-align: center;
+        padding: 0.7rem 0;
+        border-bottom: 1px solid #3ea6ff;
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+
+    .nav-links a.active {
+        font-weight: 700;
+        border-bottom: 4px solid #3ea6ff;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+
+    .tool-form {
+        padding: 1rem;
+    }
+
+    .drop-zone {
+        padding: 1.5rem 1rem;
+    }
+
     .footer-text {
         flex-direction: column;
         gap: 4px;

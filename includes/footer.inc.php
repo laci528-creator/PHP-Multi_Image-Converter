@@ -12,3 +12,6 @@
     ↗ Zur Portfolio-Website
   </a>
 </footer>
+
+</body>
+</html>

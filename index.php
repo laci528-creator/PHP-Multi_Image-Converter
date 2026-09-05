@@ -2,19 +2,10 @@
 require_once __DIR__ . "/includes/config.inc.php";
 require_once __DIR__ . "/includes/common.inc.php";
 ?>
-<!doctype html>
-<html lang="de">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP Image Toolkit</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
-    <link rel="stylesheet" href="css/common.css">
-</head>
-<body>
-    <?php require __DIR__ . "/includes/header.inc.php"; ?>
 
-<main>
+<?php require __DIR__ . "/includes/header.inc.php"; ?>
+
+<main class="main-container">
 
 <h1>PHP Image Toolkit</h1>
 <h2>Wählen Sie ein Bildbearbeitungs-Tool aus:</h2>

@@ -108,18 +108,9 @@ if (!empty($resizedFiles)) {
 }
 
 ?>
-<!doctype html>
-<html lang="de">
-	<head>
-		<title>Bilder skalieren</title>
-		<meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
-        <link rel="stylesheet" href="css/common.css">
-	</head>
-	<body>
-        <?php require __DIR__ . "/includes/header.inc.php"; ?>
-        <main>
+
+    <?php require __DIR__ . "/includes/header.inc.php"; ?>
+        <main class="main-container">
 		<h1>Bildgröße für mehrere Dateien ändern</h1>
 		
 		<form method="post" enctype="multipart/form-data" class="tool-form">
@@ -172,5 +163,3 @@ if (!empty($resizedFiles)) {
 <script src="js/dropzone.js"></script>
         </main>
         <?php require __DIR__ . "/includes/footer.inc.php"; ?>
-	</body>
-</html>
